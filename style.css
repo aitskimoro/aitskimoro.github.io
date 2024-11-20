@@ -1,40 +1,83 @@
-CSS
-/* Basic Styling */
 body {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: Comic Sans MS, cursive, sans-serif; /* Comic Sans was HUGE! */
+  background-color: #FFFFCC; /*  Common off-white/yellowish background */
+  margin: 0;
+  padding: 20px; /* Give some space around the content */
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
+  background-color: #000080; /* Dark blue header */
+  color: #DFF2FF; /* Bright blue text */
+  text-align: center;
+  padding: 10px 0; 
+  border-bottom: 2px solid #00FFFF; /* Maybe a bright border? */
+}
+
+h1 { 
+  font-size: 3em; 
+  margin: 0; /* Reduce default margin */
 }
 
 nav ul {
-    padding: 0;
-    list-style: none;
+  padding: 0;
+  list-style: none;
+  text-align: center; /* Center the navigation */
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px;   
+  display: inline;
+  margin: 0 15px;
+}
 
+nav a {
+  color: #DFF2FF; /* Yellow links */
+  text-decoration: none; /* No underlines! */
+  font-weight: bold;
+}
+
+a:hover {
+  color: #75BFEC; /* Maybe a hover effect? */
 }
 
 main {
-    padding: 20px;
+  background-color: #FFFFFF; /* White content area */
+  padding: 20px;
+  border: 2px dotted #000080; /* Dotted borders were common */
+}
+
+h2 {
+  font-size: 2em;
+  color: #6879D0; /* A nice purple */
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding:   
- 1rem 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  background-color: #000080;
+  color: #DFF2FF;
+  border-top: 2px solid #00FFFF;
+  position: relative; /* Keep it at the bottom, but allow content to push it */
+  bottom: 0; 
+  width: 100%; 
+}
+
+/* Contact Form Styling */
+#contact-form label, #contact-form input, #contact-form button {
+  display: block; /* Stack the form elements */
+  margin-bottom: 10px; 
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"] {
+  width: 100%; /* Make inputs fill the width */
+  padding: 8px;
+  border: 1px solid #000080;
+}
+
+#contact-form button {
+  background-color: #000080;
+  color: #DFF2FF;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
 }
